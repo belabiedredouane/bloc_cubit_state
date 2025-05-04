@@ -1,4 +1,4 @@
-import 'package:bloc_cubit_state/todo/ui/task_view.dart';
+import 'package:bloc_cubit_state/todo/ui/task_view_bloc.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(CounterApp());
@@ -10,7 +10,7 @@ class CounterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TaskView(),
+      home: TaskViewBloc(),
     );
   }
 }
