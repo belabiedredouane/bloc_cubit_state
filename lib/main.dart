@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'counter/controllers/cubit/counter_cubit.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'counter/controllers/bloc/counter_bloc.dart';
 import 'counter/ui/counter_page.dart';
 
 void main() => runApp(CounterApp());
@@ -15,7 +15,7 @@ class CounterApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
-        create: (_) => CounterCubit(),
+        create: (_) => CounterBloc(),
         child: CounterPage(),
       ),
     );
