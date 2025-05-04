@@ -1,9 +1,5 @@
+import 'package:bloc_cubit_state/todo/ui/task_view.dart';
 import 'package:flutter/material.dart';
-
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'counter/controllers/bloc/counter_bloc.dart';
-import 'counter/ui/counter_page.dart';
 
 void main() => runApp(CounterApp());
 
@@ -14,10 +10,7 @@ class CounterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BlocProvider(
-        create: (_) => CounterBloc(),
-        child: CounterPage(),
-      ),
+      home: TaskView(),
     );
   }
 }
